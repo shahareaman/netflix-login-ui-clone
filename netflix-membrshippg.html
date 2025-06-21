@@ -1,0 +1,136 @@
+<!-- A practice moudle to better understand the concept of the CSS Colors by developing a Netflix membership login page replica  -->
+<!DOCTYPE html>
+<html lang="en-in">
+
+<head>
+    <title>Netflix Membership Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-image: url("./images/netflix-bg.jpg");
+            background-size: cover;
+        }
+        .shade {
+            background-color: rgba(0,0,0,0.7);
+           margin-top: -10px;
+           margin-left: -10px;
+           height: 100vh;
+           width: 101.2%;
+        }
+
+
+        header {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:30px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .brand-title {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown {
+            font-weight: bold;
+            background-color: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 4px;
+            border:1px solid white;
+        }
+
+        .btn-signin {
+            font-weight: bold;
+            background-color: red;
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+
+        section {
+            text-align: center;
+            color:white;
+            padding-top: 150px;
+
+        }
+
+        .section-title {
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 30px;
+        }
+
+        .main-body {
+            padding-bottom: 15px;
+        }
+
+        .email {
+            border: 1px solid white;
+            padding: 15px;
+            width: 300px;
+            display:inline-block;
+            text-align: left;   
+            margin-right: 20px;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .btn-start {
+            font-size: 25px;
+            font-weight: bold;
+            background-color: red;
+            padding: 10px;
+            width: 170px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="shade">
+
+        <header>
+            <div class="brand-title">NETFLIX</div>
+            <div>
+                <span class="dropdown"><span class="bi bi-translate"></span><span> English </span><span class="bi bi-caret-down-fill"></span></span>
+                        <span class="btn-signin">Sign In</span>
+            </div>
+        </header>
+
+        <section>
+
+            <div class="section-title">
+                Unlimited movies, TV <br>shows and more</div>
+            <div class="section-subtitle">
+                Starts at ₹149. Cancel at any time.
+            </div>
+
+            <main>
+                <div class="main-body">
+                    Ready to watch? Enter your email to create or restart your membership.
+                </div>
+                <div>
+                    <span class="email">Email address</span>
+                    <span class="btn-start"> Get Started <span class="bi bi-chevron-right"></span>
+                </div>
+            </main>
+
+        </section>
+    </div>
+</body>
+
+</html>
